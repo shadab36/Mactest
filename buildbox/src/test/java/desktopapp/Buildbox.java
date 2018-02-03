@@ -21,7 +21,7 @@ public class Buildbox {
 		String cmd = "open /Applications/Buildbox.app";
 		Process p = Runtime.getRuntime().exec(cmd);
 
-		Thread.sleep(9000);
+		Thread.sleep(14000);
 		// Using screen class for capture
 		Screen screen = new Screen();
 		screen.setAutoWaitTimeout(10);
@@ -68,102 +68,102 @@ public class Buildbox {
 		robot.keyRelease(KeyEvent.VK_META);
 
 		// on basic setting screen click on drop down aarow button
-		screen.doubleClick("//Users//hitesh//Desktop//Image//drop-down-basic.png");
+		screen.doubleClick("drop-down-basic.png");
 		screen.setAutoWaitTimeout(10);
 
 		// click on game type drop-down
 
-		screen.doubleClick("//Users//hitesh//Desktop//Image//single.PNG");
+		screen.doubleClick("single.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// select menu option from menu settings
-		screen.doubleClick("//Users//hitesh//Desktop//Image//Endless.PNG");
+		screen.doubleClick("Endless.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// mark pause field
-		screen.click("//Users//hitesh//Desktop//Image//pause.PNG");
+		screen.click("pause.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// mark info check box field
-		screen.click("//Users//hitesh//Desktop//Image//info.PNG");
+		screen.click("info.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// //click on forward (arrow) button
-		screen.click("//Users//hitesh//Desktop//Image//forward.PNG");
+		screen.click("forward.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// click on backward (arrow) button
 
-		screen.click("//Users//hitesh//Desktop//Image//backword.PNG");
+		screen.click("backword.PNG");
 		screen.setAutoWaitTimeout(10);
 		Thread.sleep(1000);
 		// select avoidance type game
-		screen.click("//Users//hitesh//Desktop//Image//Avoidance.PNG");
+		screen.click("Avoidance.PNG");
 		screen.setAutoWaitTimeout(10);
 		Thread.sleep(1000);
-		screen.click("//Users//hitesh//Desktop//Image//createbutton.PNG");
+		screen.click("createbutton.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// play game demo
-		screen.click("//Users//hitesh//Desktop//Image//playgame.PNG");
+		screen.click("playgame.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// start game
-		screen.click("//Users//hitesh//Desktop//Image//start.PNG");
+		screen.click("start.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// pause game
-		screen.click("//Users//hitesh//Desktop//Image//pausegame.PNG");
+		screen.click("pausegame.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// click on char menu option
-		screen.click("//Users//hitesh//Desktop//Image//Characters.PNG");
-		screen.click("//Users//hitesh//Desktop//Image//Characters.PNG");
+		screen.click("Characters.PNG");
+		screen.click("Characters.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 
 		// click on objects menu option
-		screen.click("//Users//hitesh//Desktop//Image//objects.PNG");
-		screen.click("//Users//hitesh//Desktop//Image//objects.PNG");
+		screen.click("objects.PNG");
+		screen.click("objects.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 		//
 		// click on effect options
-		screen.click("//Users//hitesh//Desktop//Image//effects.PNG");
-		screen.click("//Users//hitesh//Desktop//Image//effects.PNG");
+		screen.click("effects.PNG");
+		screen.click("effects.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 
 		// click on logic options
-		screen.click("//Users//hitesh//Desktop//Image//logic.PNG");
-		screen.click("//Users//hitesh//Desktop//Image//logic.PNG");
+		screen.click("logic.PNG");
+		screen.click("logic.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 
 		// click on labels field
-		screen.click("//Users//hitesh//Desktop//Image//labels.PNG");
-		screen.click("//Users//hitesh//Desktop//Image//labels.PNG");
+		screen.click("labels.PNG");
+		screen.click("labels.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 
 		// click on setting button
-		screen.click("//Users//hitesh//Desktop//Image//setting.PNG");
+		screen.click("setting.PNG");
 		screen.setAutoWaitTimeout(10);
 		//
 		//
 		//
-		screen.click("//Users//hitesh//Desktop//Image//controller.PNG");
+		screen.click("controller.PNG");
 		screen.setAutoWaitTimeout(10);
 
-		screen.click("//Users//hitesh//Desktop//Image//Advertisements.PNG");
+		screen.click("Advertisements.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// close setting option all fields
-		screen.click("//Users//hitesh//Desktop//Image//ok_button.PNG");
+		screen.click("ok_button.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		// click on tree view
-		screen.doubleClick("//Users//hitesh//Desktop//Image//treeview.PNG");
+		screen.doubleClick("treeview.PNG");
 		screen.setAutoWaitTimeout(10);
 		Thread.sleep(2000);
 		// click on screen
@@ -171,11 +171,11 @@ public class Buildbox {
 		// click home build
 		try{
 			
-			screen.doubleClick("//Users//hitesh//Desktop//Image//homescreen.PNG");
+			screen.doubleClick("homescreen.PNG");
 			screen.setAutoWaitTimeout(10);
 			Thread.sleep(1000);
 			
-		screen.doubleClick("//Users//hitesh//Desktop//Image//home.PNG");
+		screen.doubleClick("home.PNG");
 		Thread.sleep(1000);
 		screen.setAutoWaitTimeout(10);
 		Thread.sleep(1000);
@@ -183,7 +183,7 @@ public class Buildbox {
 			
 		}
 		// close app
-		screen.doubleClick("//Users//hitesh//Desktop//Image//cross-icon.PNG");
+		screen.doubleClick("cross-icon.PNG");
 		screen.setAutoWaitTimeout(10);
 
 		

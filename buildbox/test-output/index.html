@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.Buildbox" hash-for-method="deskto_app">deskto_app</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.BuildboxProject" hash-for-method="clickable_link">clickable_link</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.BuildboxProject" hash-for-method="launch_application">launch_application</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.BuildboxProject" hash-for-method="simple_demo_element">simple_demo_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.BuildboxProject" hash-for-method="verify_browser_title">verify_browser_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="desktopapp.BuildboxProject" hash-for-method="welc_screen_verify">welc_screen_verify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +140,42 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">desktopapp.Buildbox</span>
+              <span class="class-name">desktopapp.BuildboxProject</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deskto_app">
-                  </a> <!-- deskto_app -->
-                  <span class="method-name">deskto_app</span>
+                  <a name="clickable_link">
+                  </a> <!-- clickable_link -->
+                  <span class="method-name">clickable_link</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launch_application">
+                  </a> <!-- launch_application -->
+                  <span class="method-name">launch_application</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simple_demo_element">
+                  </a> <!-- simple_demo_element -->
+                  <span class="method-name">simple_demo_element</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_browser_title">
+                  </a> <!-- verify_browser_title -->
+                  <span class="method-name">verify_browser_title</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="welc_screen_verify">
+                  </a> <!-- welc_screen_verify -->
+                  <span class="method-name">welc_screen_verify</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +183,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/h6/v83kwjk939qf_ndk_2k2jphc0000gn/T/testng-eclipse-2128425837/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/h6/v83kwjk939qf_ndk_2k2jphc0000gn/T/testng-eclipse-1915411023/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +192,7 @@
 &lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;desktopapp.Buildbox&quot;/&gt;
+      &lt;class name=&quot;desktopapp.BuildboxProject&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +232,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deskto_app')
-data.setCell(0, 2, 'desktopapp.Buildbox')
-data.setCell(0, 3, 77864);
+data.setCell(0, 1, 'verify_browser_title')
+data.setCell(0, 2, 'desktopapp.BuildboxProject')
+data.setCell(0, 3, 121276);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickable_link')
+data.setCell(1, 2, 'desktopapp.BuildboxProject')
+data.setCell(1, 3, 46450);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'launch_application')
+data.setCell(2, 2, 'desktopapp.BuildboxProject')
+data.setCell(2, 3, 9337);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'welc_screen_verify')
+data.setCell(3, 2, 'desktopapp.BuildboxProject')
+data.setCell(3, 3, 6147);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'simple_demo_element')
+data.setCell(4, 2, 'desktopapp.BuildboxProject')
+data.setCell(4, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,10 +283,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">desktopapp.Buildbox</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">desktopapp.BuildboxProject</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">deskto_app</span>
+                <span class="method-name">launch_application</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">welc_screen_verify</span>
+                <span class="method-start">9344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickable_link</span>
+                <span class="method-start">15493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_browser_title</span>
+                <span class="method-start">61947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">simple_demo_element</span>
+                <span class="method-start">183227 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
