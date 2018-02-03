@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="183284" started-at="2018-02-03T11:31:45Z" finished-at="2018-02-03T11:34:48Z">
+  <suite name="Default suite" duration-ms="124061" started-at="2018-02-03T12:30:32Z" finished-at="2018-02-03T12:32:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="183284" started-at="2018-02-03T11:31:45Z" finished-at="2018-02-03T11:34:48Z">
+    <test name="Default test" duration-ms="124061" started-at="2018-02-03T12:30:32Z" finished-at="2018-02-03T12:32:36Z">
       <class name="desktopapp.BuildboxProject">
-        <test-method status="PASS" signature="launch_application()[pri:0, instance:desktopapp.BuildboxProject@6fc6f14e]" name="launch_application" duration-ms="9337" started-at="2018-02-03T17:01:45Z" finished-at="2018-02-03T17:01:54Z">
+        <test-method status="PASS" signature="launch_application()[pri:0, instance:desktopapp.BuildboxProject@6fc6f14e]" name="launch_application" duration-ms="9104" started-at="2018-02-03T18:00:32Z" finished-at="2018-02-03T18:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_application -->
-        <test-method status="PASS" signature="welc_screen_verify()[pri:1, instance:desktopapp.BuildboxProject@6fc6f14e]" name="welc_screen_verify" duration-ms="6147" started-at="2018-02-03T17:01:54Z" finished-at="2018-02-03T17:02:00Z">
+        <test-method status="PASS" signature="welc_screen_verify()[pri:1, instance:desktopapp.BuildboxProject@6fc6f14e]" name="welc_screen_verify" duration-ms="5313" started-at="2018-02-03T18:00:41Z" finished-at="2018-02-03T18:00:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- welc_screen_verify -->
-        <test-method status="PASS" signature="clickable_link()[pri:2, instance:desktopapp.BuildboxProject@6fc6f14e]" name="clickable_link" duration-ms="46450" started-at="2018-02-03T17:02:00Z" finished-at="2018-02-03T17:02:47Z">
+        <test-method status="PASS" signature="clickable_link()[pri:2, instance:desktopapp.BuildboxProject@6fc6f14e]" name="clickable_link" duration-ms="46356" started-at="2018-02-03T18:00:47Z" finished-at="2018-02-03T18:01:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickable_link -->
-        <test-method status="PASS" signature="verify_browser_title()[pri:3, instance:desktopapp.BuildboxProject@6fc6f14e]" name="verify_browser_title" duration-ms="121276" started-at="2018-02-03T17:02:47Z" finished-at="2018-02-03T17:04:48Z">
+        <test-method status="PASS" signature="verify_browser_title()[pri:3, instance:desktopapp.BuildboxProject@6fc6f14e]" name="verify_browser_title" duration-ms="62425" started-at="2018-02-03T18:01:33Z" finished-at="2018-02-03T18:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_browser_title -->
-        <test-method status="PASS" signature="simple_demo_element()[pri:4, instance:desktopapp.BuildboxProject@6fc6f14e]" name="simple_demo_element" duration-ms="3" started-at="2018-02-03T17:04:48Z" finished-at="2018-02-03T17:04:48Z">
+        <test-method status="PASS" signature="simple_demo_element()[pri:4, instance:desktopapp.BuildboxProject@6fc6f14e]" name="simple_demo_element" duration-ms="798" started-at="2018-02-03T18:02:36Z" finished-at="2018-02-03T18:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simple_demo_element -->

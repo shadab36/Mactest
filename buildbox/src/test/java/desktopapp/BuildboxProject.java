@@ -32,15 +32,15 @@ public class BuildboxProject {
 		Screen s = new Screen();
 		s.setAutoWaitTimeout(10);
 
-		String image1 = "/Users/hitesh/Desktop/Image/Build_logo.png";
-		String image2 = "/Users/hitesh/Desktop/Image/Tutorial_video.png";
-		String image3 = "/Users/hitesh/Desktop/Image/Simple_game_demo.png";
-		String image4 = "/Users/hitesh/Desktop/Image/Platform_Demo.png";
-		String image5 = "/Users/hitesh/Desktop/Image/DevBlog.png";
-		String image6 = "/Users/hitesh/Desktop/Image/Game_of_day.png";
-		String image7 = "/Users/hitesh/Desktop/Image/13GratePlace.png";
-		String image8 = "/Users/hitesh/Desktop/Image/Buildbox+Android.png";
-		String image9 = "/Users/hitesh/Desktop/Image/Game_of_day.png";
+		String image1 = "Build_logo.png";
+		String image2 = "Tutorial_video.png";
+		String image3 = "Simple_game_demo.png";
+		String image4 = "Platform_Demo.png";
+		String image5 = "DevBlog.png";
+		String image6 = "Game_of_day.png";
+		String image7 = "13GratePlace.png";
+		String image8 = "Buildbox+Android.png";
+		String image9 = "Game_of_day.png";
 
 		String image[] = { image1, image2, image3, image4, image5, image6, image7, image8, image9, };
 
@@ -59,13 +59,13 @@ public class BuildboxProject {
 	public void clickable_link() throws FindFailed, InterruptedException {
 		Screen cs = new Screen();
 
-		String click1 = "/Users/hitesh/Desktop/Image/Build_logo.png";
-		String close = "/Users/hitesh/Desktop/Image/Closebrowser.png";
-		String click2 = "/Users/hitesh/Desktop/Image/Tutorial_video.png";
-		String click3 = "/Users/hitesh/Desktop/Image/DevBlog.png";
-		String click4 = "/Users/hitesh/Desktop/Image/Game_of_day.png";
-		String click5 = "/Users/hitesh/Desktop/Image/13GratePlace.png";
-		String click6 = "/Users/hitesh/Desktop/Image/Buildbox+Android.png";
+		String click1 = "Build_logo.png";
+		String close = "Closebrowser.png";
+		String click2 = "Tutorial_video.png";
+		String click3 = "DevBlog.png";
+		String click4 = "Game_of_day.png";
+		String click5 = "13GratePlace.png";
+		String click6 = "Buildbox+Android.png";
 		String clickable[] = { click1, close, click2, close, click3, close, click4, close, click5, close, click6,
 				close };
 		for (int j = 0; j < clickable.length; j++) {
@@ -140,9 +140,19 @@ public class BuildboxProject {
 	}
 
 	@Test(priority = 4)
-	public void simple_demo_element() {
-		System.out.println("test");
-
+	public void simple_demo_element() throws FindFailed {
+		Screen scn=new Screen();
+		scn.click("Simple_game_demo.png");
+		scn.setAutoWaitTimeout(10);
+       
+		//verify all element in simple demo section
+		
+//		String image1="Characters.png";
+//		String image2="/Users/hitesh/Desktop/Image/SimpleDG/character.png";
+//		String image3="";
+//		
+		
+		
 	}
 
 }
