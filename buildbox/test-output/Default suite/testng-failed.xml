@@ -5,7 +5,7 @@
     <classes>
       <class name="desktopapp.BuildboxProject">
         <methods>
-          <include name="verify_browser_title"/>
+          <include name="clickable_link"/>
         </methods>
       </class> <!-- desktopapp.BuildboxProject -->
     </classes>

@@ -4,14 +4,16 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
 
 public class BuildboxProject {
+
 	public static WebDriver driver;
+
+	// Method 1 launch application
 
 	@Test(priority = 0)
 	public void launch_application() {
@@ -25,7 +27,23 @@ public class BuildboxProject {
 		}
 	}
 
+	// Maximize and minimize the Application
+
 	@Test(priority = 1)
+
+	public void max_min_app() throws FindFailed, InterruptedException {
+		Screen s = new Screen();
+		Thread.sleep(2000);
+		// minimize application screen
+		s.click("/Users/hitesh/Desktop/Image/max-minapplication/minimize.png");
+		s.setAutoWaitTimeout(10);
+		// open application
+		s.click("/Users/hitesh/Desktop/Image/max-minapplication/openapp.png");
+		s.setAutoWaitTimeout(10);
+
+	}
+
+	@Test(priority = 2)
 	public void welc_screen_verify() throws FindFailed, InterruptedException {
 
 		// using screen class for verify element
@@ -55,7 +73,7 @@ public class BuildboxProject {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void clickable_link() throws FindFailed, InterruptedException {
 		Screen cs = new Screen();
 
@@ -66,93 +84,88 @@ public class BuildboxProject {
 		String click4 = "Game_of_day.png";
 		String click5 = "13GratePlace.png";
 		String click6 = "Buildbox+Android.png";
-		String clickable[] = { click1, close, click2, close, click3, close, click4, close, click5, close, click6,
-				close };
-		for (int j = 0; j < clickable.length; j++) {
-			if (cs.exists(clickable[j]) != null) {
-				cs.click(clickable[j]);
-				Thread.sleep(3000);
 
-				System.out.println("verfy the all element j is: " + j);
-			} else {
-				System.out.println("element is not present");
-			}
+		// Verify page on browser
+		String image1 = "/Users/hitesh/Desktop/Image/max-minapplication/buildboxpage_verify.png";
+		String image2 = "Users/hitesh/Desktop/Image/max-minapplication/Tutorial page.png";
+		String image3 = "/Users/hitesh/Desktop/Image/max-minapplication/Dev_Blog_page-verify.png";
+		String image4 = "/Users/hitesh/Desktop/Image/max-minapplication/arctic_smash_page_verify.png";
+		String image5 = "/Users/hitesh/Desktop/Image/max-minapplication/13 Great Place_page_verify.png";
+		String image6 = "/Users/hitesh/Desktop/Image/max-minapplication/rrdf.png";
 
-		}
+		// verfy home page
+		cs.click(click1);
+		cs.wait(click1, 10);
+		Thread.sleep(2000);
+		cs.exists(image1);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.wait(close, 10);
+		Thread.sleep(2000);
 
-	}
+		// verfy Tutorial page
+		cs.click(click2);
+		cs.wait(click2, 10);
+		Thread.sleep(2000);
+		cs.exists(image2);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.setAutoWaitTimeout(20);
+		Thread.sleep(2000);
 
-	@Test(priority = 3)
-	public void verify_browser_title() throws InterruptedException {
+		// verfy home page
+		cs.click(click3);
+		cs.wait(click3, 10);
+		Thread.sleep(2000);
+		cs.exists(image3);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.setAutoWaitTimeout(20);
+		Thread.sleep(2000);
 
-		// launch local browser
-		System.setProperty("webdriver.chrome.driver", "//Users//hitesh//Downloads//chromedriver");
+		// verfy home page
+		cs.click(click4);
+		cs.wait(click4, 10);
+		Thread.sleep(2000);
+		cs.exists(image4);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.setAutoWaitTimeout(20);
+		Thread.sleep(2000);
 
-		ChromeOptions options = new ChromeOptions();
-		// disable notification
-		options.addArguments("disable-notifications");
-		driver = new ChromeDriver(options);
-		options.addArguments("disable-notifications");
-		// open Url
+		// verfy home page
+		cs.click(click5);
+		cs.wait(click5, 10);
+		Thread.sleep(2000);
+		cs.exists(image5);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.setAutoWaitTimeout(20);
+		Thread.sleep(2000);
 
-		String Url1 = "https://www.buildbox.com";
-		String Url2 = "https://www.buildbox.com//tutorials";
-		String Url3 = "https://www.buildbox.com/dev-blog-1-buildbox-software-update/";
-		String Url4 = "https://www.buildbox.com/arctic-smash-apples-pick-for-game-of-the-day/";
-		String Url5 = "https://www.buildbox.com/13-places-to-find-free-game-sound-effects/";
-		String Url6 = "https://www.buildbox.com/how-to-test-your-games-using-android-studio/";
-
-		// verify Home page title of buildbox app on browser
-		driver.get(Url1);
-		String title = driver.getTitle();
-		Assert.assertTrue(title.contains("Buildbox"));
-
-		// Verfiy Tutorial page
-		driver.get(Url2);
-		String title1 = driver.getTitle();
-		Assert.assertTrue(title1.contains("Tutorials - Buildbox"));
-
-		// Verify dev_blog page
-		driver.get(Url3);
-		String title2 = driver.getTitle();
-		Assert.assertTrue(title2.contains("Dev Blog #1 - Buildbox Software Development Update - Buildbox"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		// Verify Game of the day page is verify
-		driver.get(Url4);
-		String title3 = driver.getTitle();
-		Assert.assertTrue(title3.contains("Arctic Smash: Apple’s Pick for Game of the Day - Buildbox"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		// Verify !3 Great places to Find tree page
-		driver.get(Url5);
-		String title4 = driver.getTitle();
-		Assert.assertTrue(title4.contains("13 Great Places to Find Free Game Sound Effects - Buildbox"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		// Test on Android page is verify
-		driver.get(Url6);
-		String title5 = driver.getTitle();
-		Assert.assertTrue(title5.contains("How to Test Your Games Using Android Studio - Buildbox"));
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-		driver.close();
+		// verfy home page
+		cs.click(click6);
+		cs.wait(click6, 10);
+		Thread.sleep(2000);
+		cs.exists(image6);
+		cs.setAutoWaitTimeout(15);
+		cs.click(close);
+		cs.setAutoWaitTimeout(20);
 		Thread.sleep(2000);
 
 	}
 
-	@Test(priority = 4)
-	public void simple_demo_element() throws FindFailed {
-		Screen scn=new Screen();
-		scn.click("Simple_game_demo.png");
-		scn.setAutoWaitTimeout(10);
-       
-		//verify all element in simple demo section
-		
-//		String image1="Characters.png";
-//		String image2="/Users/hitesh/Desktop/Image/SimpleDG/character.png";
-//		String image3="";
-//		
-		
-		
-	}
+	//
+	// @Test(priority = 5)
+	// public void simple_demo_element() throws FindFailed {
+	// Screen scn = new Screen();
+	// scn.click("Simple_game_demo.png");
+	// scn.setAutoWaitTimeout(10);
 
+	// verify all element in simple demo section
+
+	// String image1="Characters.png";
+	// String image2="/Users/hitesh/Desktop/Image/SimpleDG/character.png";
+	// String image3="";
+	//
 }
