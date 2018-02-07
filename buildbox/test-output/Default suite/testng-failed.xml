@@ -5,7 +5,7 @@
     <classes>
       <class name="desktopapp.BuildboxProject">
         <methods>
-          <include name="clickable_link"/>
+          <include name="OurGmae_screen_element"/>
         </methods>
       </class> <!-- desktopapp.BuildboxProject -->
     </classes>
