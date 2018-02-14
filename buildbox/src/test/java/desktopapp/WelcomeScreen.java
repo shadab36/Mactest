@@ -48,7 +48,7 @@ public class WelcomeScreen {
 		Screen s = new Screen();
 
 		String click1 = "Build_logo.png";
-		String close = "closebrowserapp.png";
+		String close = "Closebrowser.png";
 		String click2 = "Tutorial_video.png";
 		String click3 = "DevBlog.png";
 		String click4 = "Game_of_day.png";
