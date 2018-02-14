@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Demo suite 1]">
-  <test verbose="2" name="Regression suite 1(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="desktopapp.WelcomeScreen">
         <methods>
@@ -9,5 +9,5 @@
         </methods>
       </class> <!-- desktopapp.WelcomeScreen -->
     </classes>
-  </test> <!-- Regression suite 1(failed) -->
-</suite> <!-- Failed suite [Demo suite 1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

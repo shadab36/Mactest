@@ -63,30 +63,58 @@ public class CreatorScreen {
 	@Test(priority = 5)
 	public void verify_Game_type() throws FindFailed, InterruptedException {
 		Screen s = new Screen();
+		
+//Path of Game Type Image
+	//	String image1 = "Default_Portait.png";
+		
+		String image2 = "Default_Landscape.png";
+//		String image3 = "360shooter.png";
+//		String image4 = "Arrount_The_Word.png";
+//		String image5 = "Avoidance.PNG";
+//		
+//		String image6 = "Basketball.png";
+//		String image7 = "Break_the_chain.png";
+//		String image8 = "Dogfight.png";
+//		String image9 = "Download_Bounce.png";
+//		String image10 = "Falls_Button.png";
+//		String image11 = "Fall_Switch.png";
+//		String image12 = "Flappy.png";
+//		String image13 = "GravityPortal.png";
+//		String image14 = "Gravity_Runner.png";
+//		String image15 = "Impossible.png";
+//
+//	
+//		String Fbutton = "forward.png";
+//		String create = "createbutton.PNG";
+//		
+//		
+//		String BSection = "drop-down-basic.png";
+//		String imag1 = "CoinsCollect.png";
+//		String imag2 = "Cointextdrop.png";
+//		String imag3 = "GlobalDistance.png";
+//		String imag4 = "GlobalDistancedrop.png";
+//		String imag5 = "GlobalSreen.png";
 
-		String image1 = "360shooter.png";
-		String image2 = "Avoidance.PNG";
-		String Fbutton = "forward.png";
-		String image4 = "Dogfight.png";
-		String image5 = "GravityPortal.png";
-		String Bbutton = "backword.png";
-		String image7 = "CarouserMiddle.png";
-		String image8 = "LastCarouser.png";
+		
+		//String Bbutton = "backword.png";
+		//String image7 = "CarouserMiddle.png";
+		//String image8 = "LastCarouser.png";
 
-		String GameType[] = { image1, image2, Fbutton, image4, Fbutton, image5, Bbutton, image7, image8 };
-
-		for (int m = 0; m < GameType.length; m++) {
-			if (s.exists(GameType[m]) != null) {
+		
+		
+		//Game1
+			if (s.exists(image2) != null) {
 				s.setAutoWaitTimeout(25);
 				Thread.sleep(300);
-				s.click(GameType[m]);
+				s.click(image2);
+				s.setAutoWaitTimeout(25);
 				Thread.sleep(200);
-				System.out.println("verfy the all element m is: " + m);
+				//System.out.println("verfy the all element m is: " + m);
 			} else {
-				System.out.println("verfy the all element m is not exits: " + m);
+				System.out.println("verfy the all element  is not exits");
 			}
 		}
-	}
+	
 
 	@Test(priority = 6)
 	public void verify_drop_down_basis_section() throws FindFailed, InterruptedException {
@@ -100,7 +128,7 @@ public class CreatorScreen {
 
 		String Basis[] = { BSection, image1, image2, image3, image4, image5 };
 
-		for (int p = 0; p < Basis.length; p++) {
+		for (int p = 0; p < Basis.length; ++p) {
 
 			if (s.exists(Basis[p]) != null) {
 				s.setAutoWaitTimeout(50);

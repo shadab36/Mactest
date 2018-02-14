@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo suite 1" duration-ms="179557" started-at="2018-02-07T13:25:08Z" finished-at="2018-02-07T13:28:08Z">
+  <suite name="Demo suite 1" duration-ms="130489" started-at="2018-02-14T09:52:41Z" finished-at="2018-02-14T09:54:51Z">
     <groups>
     </groups>
-    <test name="Regression suite 1" duration-ms="179557" started-at="2018-02-07T13:25:08Z" finished-at="2018-02-07T13:28:08Z">
+    <test name="Regression suite 1" duration-ms="130489" started-at="2018-02-14T09:52:41Z" finished-at="2018-02-14T09:54:51Z">
       <class name="desktopapp.CreatorScreen">
-        <test-method status="PASS" signature="creator_New_Game_Name()[pri:4, instance:desktopapp.CreatorScreen@5f9d02cb]" name="creator_New_Game_Name" duration-ms="11129" started-at="2018-02-07T18:56:28Z" finished-at="2018-02-07T18:56:39Z">
+        <test-method status="PASS" signature="creator_New_Game_Name()[pri:4, instance:desktopapp.CreatorScreen@1f28c152]" name="creator_New_Game_Name" duration-ms="10414" started-at="2018-02-14T15:23:40Z" finished-at="2018-02-14T15:23:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creator_New_Game_Name -->
-        <test-method status="PASS" signature="verify_Game_type()[pri:5, instance:desktopapp.CreatorScreen@5f9d02cb]" name="verify_Game_type" duration-ms="15189" started-at="2018-02-07T18:56:39Z" finished-at="2018-02-07T18:56:55Z">
+        <test-method status="PASS" signature="verify_Game_type()[pri:5, instance:desktopapp.CreatorScreen@1f28c152]" name="verify_Game_type" duration-ms="1520" started-at="2018-02-14T15:23:50Z" finished-at="2018-02-14T15:23:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Game_type -->
-        <test-method status="PASS" signature="verify_drop_down_basis_section()[pri:6, instance:desktopapp.CreatorScreen@5f9d02cb]" name="verify_drop_down_basis_section" duration-ms="11505" started-at="2018-02-07T18:56:55Z" finished-at="2018-02-07T18:57:06Z">
+        <test-method status="PASS" signature="verify_drop_down_basis_section()[pri:6, instance:desktopapp.CreatorScreen@1f28c152]" name="verify_drop_down_basis_section" duration-ms="11360" started-at="2018-02-14T15:23:52Z" finished-at="2018-02-14T15:24:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_drop_down_basis_section -->
-        <test-method status="PASS" signature="word_settins_drop_down()[pri:7, instance:desktopapp.CreatorScreen@5f9d02cb]" name="word_settins_drop_down" duration-ms="25931" started-at="2018-02-07T18:57:06Z" finished-at="2018-02-07T18:57:32Z">
+        <test-method status="PASS" signature="word_settins_drop_down()[pri:7, instance:desktopapp.CreatorScreen@1f28c152]" name="word_settins_drop_down" duration-ms="13813" started-at="2018-02-14T15:24:03Z" finished-at="2018-02-14T15:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- word_settins_drop_down -->
-        <test-method status="PASS" signature="menu_setting()[pri:8, instance:desktopapp.CreatorScreen@5f9d02cb]" name="menu_setting" duration-ms="3275" started-at="2018-02-07T18:57:32Z" finished-at="2018-02-07T18:57:35Z">
+        <test-method status="PASS" signature="menu_setting()[pri:8, instance:desktopapp.CreatorScreen@1f28c152]" name="menu_setting" duration-ms="3296" started-at="2018-02-14T15:24:17Z" finished-at="2018-02-14T15:24:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu_setting -->
       </class> <!-- desktopapp.CreatorScreen -->
-      <class name="desktopapp.Our_New_Game_Screen">
-        <test-method status="PASS" signature="create_gmae()[pri:9, instance:desktopapp.Our_New_Game_Screen@63753b6d]" name="create_gmae" duration-ms="1824" started-at="2018-02-07T18:57:35Z" finished-at="2018-02-07T18:57:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_gmae -->
-        <test-method status="PASS" signature="OurGmae_screen_element()[pri:10, instance:desktopapp.Our_New_Game_Screen@63753b6d]" name="OurGmae_screen_element" duration-ms="30772" started-at="2018-02-07T18:57:37Z" finished-at="2018-02-07T18:58:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OurGmae_screen_element -->
-      </class> <!-- desktopapp.Our_New_Game_Screen -->
       <class name="desktopapp.WelcomeScreen">
-        <test-method status="PASS" signature="runApp()[pri:1, instance:desktopapp.WelcomeScreen@13a5fe33]" name="runApp" duration-ms="8180" started-at="2018-02-07T18:55:08Z" finished-at="2018-02-07T18:55:17Z">
+        <test-method status="PASS" signature="runApp()[pri:1, instance:desktopapp.WelcomeScreen@4b4523f8]" name="runApp" duration-ms="8105" started-at="2018-02-14T15:22:41Z" finished-at="2018-02-14T15:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runApp -->
-        <test-method status="PASS" signature="welc_screen_verify()[pri:2, instance:desktopapp.WelcomeScreen@13a5fe33]" name="welc_screen_verify" duration-ms="5319" started-at="2018-02-07T18:55:17Z" finished-at="2018-02-07T18:55:22Z">
+        <test-method status="PASS" signature="welc_screen_verify()[pri:2, instance:desktopapp.WelcomeScreen@4b4523f8]" name="welc_screen_verify" duration-ms="3811" started-at="2018-02-14T15:22:49Z" finished-at="2018-02-14T15:22:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- welc_screen_verify -->
-        <test-method status="PASS" signature="clickable_link()[pri:3, instance:desktopapp.WelcomeScreen@13a5fe33]" name="clickable_link" duration-ms="66345" started-at="2018-02-07T18:55:22Z" finished-at="2018-02-07T18:56:28Z">
+        <test-method status="PASS" signature="clickable_link()[pri:3, instance:desktopapp.WelcomeScreen@4b4523f8]" name="clickable_link" duration-ms="47371" started-at="2018-02-14T15:22:53Z" finished-at="2018-02-14T15:23:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickable_link -->
       </class> <!-- desktopapp.WelcomeScreen -->
+      <class name="desktopapp.Our_New_Game_Screen">
+        <test-method status="PASS" signature="create_gmae()[pri:9, instance:desktopapp.Our_New_Game_Screen@7d907bac]" name="create_gmae" duration-ms="1804" started-at="2018-02-14T15:24:21Z" finished-at="2018-02-14T15:24:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_gmae -->
+        <test-method status="PASS" signature="OurGmae_screen_element()[pri:10, instance:desktopapp.Our_New_Game_Screen@7d907bac]" name="OurGmae_screen_element" duration-ms="19992" started-at="2018-02-14T15:24:22Z" finished-at="2018-02-14T15:24:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OurGmae_screen_element -->
+        <test-method status="PASS" signature="Objects_screen_element()[pri:11, instance:desktopapp.Our_New_Game_Screen@7d907bac]" name="Objects_screen_element" duration-ms="8902" started-at="2018-02-14T15:24:42Z" finished-at="2018-02-14T15:24:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Objects_screen_element -->
+      </class> <!-- desktopapp.Our_New_Game_Screen -->
     </test> <!-- Regression suite 1 -->
   </suite> <!-- Demo suite 1 -->
 </testng-results>

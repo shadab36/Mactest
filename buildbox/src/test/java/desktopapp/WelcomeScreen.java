@@ -22,14 +22,15 @@ public class WelcomeScreen {
 		String image2 = "Tutorial_video.png";
 		String image3 = "Simple_game_demo.png";
 		String image4 = "Platform_Demo.png";
-		String image5 = "DevBlog.png";
-		String image6 = "Game_of_day.png";
-		String image7 = "13GratePlace.png";
-		String image8 = "Buildbox+Android.png";
-		String image9 = "Game_of_day.png";
-		String image10 = "markon_buildbox.png";
-		String image11 = "create.png";
-		String image[] = { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11 };
+		String image5 = "16Surprising.png";
+		
+		String image6 = "DevBlog.png";
+		String image7 = "Game_of_day.png";
+		String image8 = "13GratePlace.png";
+		
+		
+		String image9 = "create.png";
+		String image[] = {image1, image2, image3, image4, image5, image6, image7, image8, image9};
 
 		for (int i = 0; i < image.length; i++) {
 
@@ -47,20 +48,20 @@ public class WelcomeScreen {
 		Screen s = new Screen();
 
 		String click1 = "Build_logo.png";
-		String close = "Closebrowser.png";
+		String close = "closebrowserapp.png";
 		String click2 = "Tutorial_video.png";
 		String click3 = "DevBlog.png";
 		String click4 = "Game_of_day.png";
 		String click5 = "13GratePlace.png";
-		String click6 = "Buildbox+Android.png";
-		String click7 = "markon_buildbox.png";
+		String click6 = "16Surprising.png";
+		
 		// Verify page on browser
 		String image1 = "buildboxpage_verify.png";
 		String image2 = "Tutorial page.png";
 		String image3 = "Dev_Blog_page-verify.png";
 		String image4 = "arctic_smash_page_verify.png";
 		String image5 = "13 Great Place_page_verify.png";
-		String image6 = "How to Test Android_page_verify.png";
+		
 
 		// verfy home page
 		s.click(click1);
@@ -117,15 +118,13 @@ public class WelcomeScreen {
 		// verfy home page
 		s.click(click6);
 		s.wait(click6, 10);
-		Thread.sleep(2000);
-		s.find(image6);
-		s.setAutoWaitTimeout(15);
+		Thread.sleep(4000);
+
 		s.click(close);
 		s.setAutoWaitTimeout(10);
 		Thread.sleep(2000);
 
 		// Verify open build box startup button
-		s.click(click7);
-		s.setAutoWaitTimeout(30);
+	
 	}
 }

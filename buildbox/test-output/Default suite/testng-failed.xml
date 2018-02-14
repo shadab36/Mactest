@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="desktopapp.BuildboxProject">
+      <class name="desktopapp.WelcomeScreen">
         <methods>
-          <include name="OurGmae_screen_element"/>
+          <include name="clickable_link"/>
         </methods>
-      </class> <!-- desktopapp.BuildboxProject -->
+      </class> <!-- desktopapp.WelcomeScreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
