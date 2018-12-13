@@ -2,6 +2,7 @@ package buildbox;
 
 class TwoDimensionalArray {
 	public static void main(String[] args) { 
+//Chnge test1
 		String image1 = "Default_Portait.png";
 		String image2 = "Default_Landscape.png";
 		String image3 = "360shooter.png";
