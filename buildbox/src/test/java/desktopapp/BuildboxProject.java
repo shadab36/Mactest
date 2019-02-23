@@ -18,6 +18,7 @@ public class BuildboxProject {
 	public Screen s;
 	// Method 1 launch application
 
+// Method 1 launch application 1
 //	@Test(priority = 0)
 //	public void launch_application() {
 //		try {
